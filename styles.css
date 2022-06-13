@@ -206,6 +206,7 @@ button:active{
 }
 .books{
     display: flex;
+    flex-wrap: wrap;
 }
 .book{
     width: 25%;
@@ -238,3 +239,4 @@ button:active{
     padding-right: 6px;
     color: #bfbfbf;
 }
+
