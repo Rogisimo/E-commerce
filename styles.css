@@ -240,13 +240,13 @@ a:hover{
 .highlight_wrapper{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .highlight{
     padding: 0 24px;
     width: calc(100/3);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .highlight_para{
@@ -269,6 +269,7 @@ a:hover{
 .highlight_subtitle{
     font-size: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 
@@ -357,3 +358,32 @@ footer{
         display: block;
     }
 }
+
+/* Small phones, tablets, large smarthphones */
+
+@media(max-width: 768px){
+    .header_description{
+        padding: 0 24px;
+    }
+    .h1{
+        font-size: 40px;
+    }
+    .h2{
+        font-size: 26px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .book{
+        width: 50%;
+    }
+    .highlight{
+        width: 100%;
+    }
+    .highlight:not(:last-child){
+        margin-bottom: 24px;
+    }
+}
+
+
+/* Small phones, large smarthphones */
