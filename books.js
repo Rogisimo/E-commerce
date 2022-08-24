@@ -2,13 +2,14 @@
 
 function renderBooks(){
   const booksWrapper = document.querySelector('.books');
-  booksWrapper.innerHTML =
-  `<div class="book">
+  const books = getBooks();
+  const booksHtml = books.map(book => {
+    return `<div class="book">
   <figure class="book_img-wrapper">
-    <img class="book_img" src="assets/atomic habits.jpg" alt="">
+    <img class="book_img" src="${book.url}" alt="">
   </figure>
   <div class="book_title">
-    Atomic Habits
+    ${books[0].title}
   </div>
   <div class="book_readings">
     <i class="fas fa-star"></i>
@@ -18,9 +19,12 @@ function renderBooks(){
     <i class="fas fa-star-half-alt"></i>
   </div>
   <div class="book_price">
-    <span class="book_price-normal">$59.95</span> $14.95
+    <span class="book_price-normal">$${books[0].originalPrice}</span> $${books[0].salePrice}
   </div>
 </div>`
+  }).join("")
+
+  booksWrapper.innerHTML = booksHtml;
 }
 
 setTimeout(() => {
