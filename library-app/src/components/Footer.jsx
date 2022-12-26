@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from "../assets/Library.svg"
 
 function Footer() {
@@ -12,10 +13,10 @@ function Footer() {
                     </figure>
                 </a>
                 <div className="footer-list">
-                    <a href="/home" className='footer-link'>Home</a>
-                    <a href="/home" className='footer-link no-cursor'>About</a>
-                    <a href="/books" className='footer-link'>Books</a>
-                    <a href="/cart" className='footer-link'>Cart</a>
+                    <Link to="/" className='footer-link'>Home</Link>
+                    <Link to="/" className='footer-link no-cursor'>About</Link>
+                    <Link to="/books" className='footer-link'>Books</Link>
+                    <Link to="/cart" className='footer-link'>Cart</Link>
                 </div>
                 <div className="footer-copyright">
                     Copyright &copy; 2022 Library

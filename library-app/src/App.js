@@ -10,6 +10,8 @@ import './index.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Books from './components/pages/Books';
 import {books} from "./data"
+import BooksInfo from './components/pages/BooksInfo';
+import Cart from './components/pages/Cart';
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
     <div className="App">
       <Nav/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/books' element={<Books books={books}/>}/>
+        <Route path='/' exact element={<Home/>}/>
+        <Route path='/books' exact element={<Books books={books}/>}/>
+        <Route path='/books/:id' element={<BooksInfo books={books}/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <Footer/>
     </div>

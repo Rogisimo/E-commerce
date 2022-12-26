@@ -250,13 +250,7 @@ header {
 
 .header-img-wrapper {
   padding: 20px;
-
-  /* Added this after the tutorial to 
-  show it over the wave on larger screens */
   z-index: 50;
-  
-  /* Added this after the tutorial to 
-  make landing page responsive on laptops */
   max-height: 50vh;
 }
 
@@ -579,7 +573,7 @@ select {
   align-items: center;
 }
 
-.book-selected-img {
+.book-selected-img{
   max-height: 500px;
   width: auto;
   max-width: 100%;
