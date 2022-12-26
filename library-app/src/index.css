@@ -398,16 +398,19 @@ FEATURES
 .book-title-skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .book-rating-skeleton {
   width: 100px;
   height: 19px;
+  max-width: 100px;
 }
 
 .book-price-skeleton {
   width : 200px;
   height: 19px;
+  max-width: 150px;
 }
 
 .book-link {
